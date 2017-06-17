@@ -4,5 +4,9 @@
   "description": "A yarn package configured with a basic Babel setup",
   "main": "index.js",
   "author": "Jess Lin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2"
+  }
 }
