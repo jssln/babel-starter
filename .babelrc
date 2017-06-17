@@ -1,7 +1,7 @@
 {
   "presets": [
-    "flow",
     "env",
+    "flow",
     "react"
   ]
 }
