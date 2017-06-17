@@ -16,3 +16,19 @@ Promise.resolve(doAThing());
 // After adding babel-preset-flow, we can declare Flow types and have them stripped out by Babel.
 type SampleType = { sampleField: number };
 const aThing: SampleType = { sampleField: 1 };
+
+// After adding babel-preset-react, we can write JSX, and Babel will transform it into 
+// `React.createElement` calls.
+import React from 'react';
+const aDiv = (
+  <div>
+    <h1>Hello world!</h1>
+  </div>
+);
+
+// In the browser:
+/*
+import ReactDOM from 'react-dom';
+ReactDOM.render(aDiv, document.getElementById('root'));
+*/
+
