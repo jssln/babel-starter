@@ -19,6 +19,7 @@ const aThing: SampleType = { sampleField: 1 };
 
 // After adding babel-preset-react, we can write JSX, and Babel will transform it into 
 // `React.createElement` calls.
+// Note, this means we need to install React separately. (react and react-dom)
 import React from 'react';
 const aDiv = (
   <div>
