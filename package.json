@@ -1,0 +1,8 @@
+{
+  "name": "starter-babel",
+  "version": "1.0.0",
+  "description": "A yarn package configured with a basic Babel setup",
+  "main": "index.js",
+  "author": "Jess Lin",
+  "license": "MIT"
+}
