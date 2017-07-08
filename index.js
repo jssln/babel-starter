@@ -1,3 +1,5 @@
+// @flow
+
 // With babel-cli installed, you get the 'babel' and 'babel-node' binaries in ./node_modules/.bin.
 // You can see this used in the "scripts"=>"demo" section of the package.json.
 var http = require('http');
@@ -17,7 +19,7 @@ Promise.resolve(doAThing());
 type SampleType = { sampleField: number };
 const aThing: SampleType = { sampleField: 1 };
 
-// After adding babel-preset-react, we can write JSX, and Babel will transform it into 
+// After adding babel-preset-react, we can write JSX, and Babel will transform it into
 // `React.createElement` calls.
 // Note, this means we need to install React separately. (react and react-dom)
 import React from 'react';
@@ -33,3 +35,5 @@ import ReactDOM from 'react-dom';
 ReactDOM.render(aDiv, document.getElementById('root'));
 */
 
+// Flow example. If you uncomment the following line and run `yarn run flow`, you will see an error.
+// const a: number = 'notANumber';
